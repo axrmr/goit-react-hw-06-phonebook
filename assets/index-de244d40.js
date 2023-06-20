@@ -77,7 +77,8 @@ Error generating stack: `+i.message+`
   gap: 10px;
 
   input {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     padding: 10px;
     font-size: 1.2rem;
     border: 1px solid;
