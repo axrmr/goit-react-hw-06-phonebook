@@ -2,6 +2,8 @@ import { styled } from 'styled-components'
 
 export const Wrapper = styled.div`
   position: relative;
+   max-width: 360px;
+   width: 100%;
 
   .close {
     position: absolute;
@@ -15,7 +17,6 @@ export const Wrapper = styled.div`
 `
 
 export const Input = styled.input`
-  max-width: 360px;
   width: 100%;
   font-size: 1.2rem;
   padding: 10px 35px 10px 15px;
