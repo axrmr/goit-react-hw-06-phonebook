@@ -15,7 +15,8 @@ export const Wrapper = styled.div`
 `
 
 export const Input = styled.input`
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
   font-size: 1.2rem;
   padding: 10px 35px 10px 15px;
   border: 1px solid;
