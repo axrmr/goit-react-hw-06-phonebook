@@ -135,6 +135,8 @@ Error generating stack: `+i.message+`
   }
 `,q1=()=>{const{contacts:e,filter:t}=aa(l=>l.contacts),n=ma(),r=l=>{n(Rg(l))},i=((l,u)=>u?l.filter(s=>s.name.toLowerCase().includes(u.toLowerCase())):l)(e,t);return U.jsx(J1,{children:i.map(l=>U.jsxs("li",{children:[U.jsxs("span",{children:[l.name,": ",l.number]}),U.jsx("button",{onClick:()=>r(l.id),children:U.jsx(Qh,{className:"close",size:35})})]},l.id))})},ew=so.div`
   position: relative;
+   max-width: 360px;
+   width: 100%;
 
   .close {
     position: absolute;
@@ -146,7 +148,6 @@ Error generating stack: `+i.message+`
     }
   }
 `,tw=so.input`
-  max-width: 360px;
   width: 100%;
   font-size: 1.2rem;
   padding: 10px 35px 10px 15px;
