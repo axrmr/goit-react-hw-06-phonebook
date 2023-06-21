@@ -23,6 +23,7 @@ const ContactForm = () => {
   }
 
   const handleChange = ({ target: { name, value } }) => {
+    if (value.startsWith(' ') return
     setContactData(prev => ({ ...prev, [name]: value.trim() }))
   }
 
