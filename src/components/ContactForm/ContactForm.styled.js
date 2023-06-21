@@ -1,13 +1,12 @@
-import { styled } from 'styled-components';
+import { styled } from 'styled-components'
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 
   input {
-    max-width: 400px;
-    width: 100%;
     padding: 10px;
     font-size: 1.2rem;
     border: 1px solid;
@@ -16,6 +15,6 @@ const Form = styled.form`
       font-size: 1.2rem;
     }
   }
-`;
+`
 
-export default Form;
+export default Form

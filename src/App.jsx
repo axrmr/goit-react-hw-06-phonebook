@@ -8,7 +8,7 @@ const CONTACTS_STORAGE_KEY = 'phonebook-contacts'
 
 const App = () => {
   return (
-    <>
+    <div>
       <ReactLogo />
       <h1>Phonebook</h1>
       <ContactForm />
@@ -16,7 +16,7 @@ const App = () => {
       <h2>Contacts</h2>
       <Filter />
       <ContactList />
-    </>
+    </div>
   )
 }
 

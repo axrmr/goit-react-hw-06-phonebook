@@ -5,7 +5,7 @@ import { deleteContact } from 'store/slices/contactsSlice'
 import List from './ContactList.styled'
 
 const ContactList = () => {
-  const { contacts, filter } = useSelector(state => state.contacts)
+  const { contacts, filterValue } = useSelector(state => state.contacts)
 
   const dispatch = useDispatch()
 
@@ -21,7 +21,7 @@ const ContactList = () => {
     return contacts
   }
 
-  const filteredContacts = filterContacts(contacts, filter)
+  const filteredContacts = filterContacts(contacts, filterValue)
 
   return (
     <List>

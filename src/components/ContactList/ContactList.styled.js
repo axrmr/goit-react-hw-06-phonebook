@@ -4,6 +4,7 @@ const List = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   margin: 30px 0 0 20px;
   padding: 0;
 
@@ -17,11 +18,13 @@ const List = styled.ul`
     font-size: 1.3rem;
     text-align: center;
     cursor: pointer;
+    border: 1px solid lightgray;
     border-radius: 10px;
-    transition: transform 0.15s linear;
+    transition: transform 0.15s linear, border-color 0.15s linear;
     &:hover {
       transform: scale(1.02);
       box-shadow: 1px 1px 6px #00d8ff;
+      border-color: transparent;
     }
     &:hover button {
       opacity: 1;
