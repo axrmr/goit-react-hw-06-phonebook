@@ -11,6 +11,7 @@ const Filter = () => {
   const dispatch = useDispatch()
 
   const handleFilterChange = ({ target: { value } }) => {
+    if (value.startsWith(' ')) return
     dispatch(setContactsFilter(value))
   }
 
