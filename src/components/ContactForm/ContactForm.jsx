@@ -1,5 +1,4 @@
 import { nanoid } from 'nanoid'
-import PropTypes from 'prop-types'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -23,8 +22,8 @@ const ContactForm = () => {
   }
 
   const handleChange = ({ target: { name, value } }) => {
-    if (value.startsWith(' ') return
-    setContactData(prev => ({ ...prev, [name]: value.trim() }))
+    if (value.startsWith(' ')) return
+    setContactData(prev => ({ ...prev, [name]: value }))
   }
 
   const handleSubmit = e => {
@@ -61,10 +60,6 @@ const ContactForm = () => {
       <button>Create</button>
     </Form>
   )
-}
-
-ContactForm.propTypes = {
-  addContact: PropTypes.func,
 }
 
 export default ContactForm
