@@ -30,7 +30,7 @@ const Filter = () => {
         type="text"
         value={filterValue}
         onChange={handleFilterChange}
-        placeholder="Search contact"
+        placeholder="Search contact by name"
       />
     </Wrapper>
   )

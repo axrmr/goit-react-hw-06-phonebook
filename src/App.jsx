@@ -4,8 +4,6 @@ import Filter from 'components/Filter/Filter'
 import ReactLogo from 'components/ReactLogo/ReactLogo'
 import './App.css'
 
-const CONTACTS_STORAGE_KEY = 'phonebook-contacts'
-
 const App = () => {
   return (
     <div>

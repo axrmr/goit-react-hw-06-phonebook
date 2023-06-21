@@ -23,7 +23,7 @@ const ContactForm = () => {
   }
 
   const handleChange = ({ target: { name, value } }) => {
-    setContactData(prev => ({ ...prev, [name]: value }))
+    setContactData(prev => ({ ...prev, [name]: value.trim() }))
   }
 
   const handleSubmit = e => {
@@ -42,7 +42,7 @@ const ContactForm = () => {
         name="name"
         value={contactData.name}
         onChange={handleChange}
-        pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+        pattern="(^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$)"
         title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
         placeholder="Enter name"
         required
@@ -52,9 +52,9 @@ const ContactForm = () => {
         name="number"
         value={contactData.number}
         onChange={handleChange}
-        pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+        pattern="^(?!\+.*\(.*\).*--.*$)(?!\+.*\(.*\).*-$)([0-9]{10})$"
         title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-        placeholder="Enter number"
+        placeholder="088-088-0808"
         required
       />
       <button>Create</button>
