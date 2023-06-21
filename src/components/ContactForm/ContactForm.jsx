@@ -44,7 +44,7 @@ const ContactForm = () => {
         onChange={handleChange}
         pattern="(^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$)"
         title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-        placeholder="Enter name"
+        placeholder="Rustam Aslanov"
         required
       />
       <input
